@@ -52,6 +52,64 @@ def fej(vlista):
         i+=1
     return fej
 
+#################################################
+def kockadobas():
+    kocka_lista=[]
+
+    i:int= 0
+    while(i<10):
+        vdobások:int= int(random.random()*6+1)
+        kocka_lista.append(vdobások)
+        i+=1
+    return kocka_lista
+
+def mibol_mennyi_dobas(kocka_lista,szam):
+    i:int=0
+    db=0
+    """egyes:int=0
+    kettes:int=0
+    harmas:int=0
+    negyes:int=0
+    otos:int= 0
+    hatos:int=0
+    while(i<len(kocka_lista)):
+        if(kocka_lista[i]==1):
+            egyes+=1
+        elif(kocka_lista[i]==2):
+            kettes+=1
+        elif(kocka_lista[i]==3):
+            harmas+=1
+        elif(kocka_lista[i]==4):
+            negyes+=1
+        elif(kocka_lista[i]==5):
+            otos+=1
+        else:
+            hatos+=1
+        i+=1
+    dblista.append(egyes)
+    dblista.append(kettes)
+    dblista.append(harmas)
+    dblista.append(negyes)
+    dblista.append(otos)
+    dblista.append(hatos)
+    return dblista"""
+    while(i<len(kocka_lista)):
+        if(kocka_lista[i]==szam):
+            db+=1
+        i+=1
+    return db
+    
+
+
+'''def kiir(dblista):
+    kiirlista=[]
+    i:int=0
+    while(i<len(dblista)):
+        if()'''
+        
+
+
+
 
 
 
