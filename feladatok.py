@@ -15,3 +15,21 @@ def poz_szamok_szama(lista):
             db+=1
         i+=1
     return db
+
+def negativ_szamok_osszege(lista):
+    i:int=0
+    ossz:int=0
+    while(i<len(lista)):
+        if(lista[i]<0):
+            ossz+=lista[i]
+        i+=1   
+    return ossz
+
+def ottel_oszthato_osszege(lista):
+    i:int=0
+    osszeg:int=0
+    while(i<len(lista)):
+        if(lista[i]%5==0):
+            osszeg+=lista[i]
+        i+=1
+    return osszeg
